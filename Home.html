@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="Css." href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item img:hover {
+            opacity: 0.8;
+        }
+        .caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .welcome button {
+    background-color: #FF7043; 
+    color: rgb(249, 244, 244);
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s linear, transform 0.3s linear;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .welcome button:hover {
+    background-color: #ca4b24; 
+    transform: scale(1.05);
+  }
+  .welcome {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #a8dba9, #a6c1d6); 
+    color: white;
+  }
+
+  
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center; padding: 20px; font-size: 32px;">Photo Gallery</h1>
+    <section class="welcome">
+    <button><a href="clg.html">Home</a></button>
+</section>
+
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <a href="Sivan Temple/8.jpeg"><img src="Sivan Temple/8.jpeg" alt="Image 1"></a>
+            <div class="caption">Image 1</div>
+        </div>
+        <div class="gallery-item">
+           <a href="Sivan Temple/14.JPG"> <img src="Sivan Temple/14.JPG" alt="Image 2"></a>
+            <div class="caption">Image 2</div>
+        </div>
+        <div class="gallery-item">
+            <a href="Sivan Temple/2.jpg"><img src="Sivan Temple/2.jpg" alt="Image 3"></a>
+            <div class="caption">Image 3</div>
+        </div>
+        <div class="gallery-item">
+            <a href="Sivan Temple/3.jpeg"><img src="Sivan Temple/3.jpeg" alt="Image 4"></a>
+            <div class="caption">Image 4</div>
+        </div>
+        <div class="gallery-item">
+            <a href="Sivan Temple/4.jpeg"><img src="Sivan Temple/4.jpeg" alt="Image 5"></a>
+            <div class="caption">Image 5</div>
+        </div>
+        <div class="gallery-item">
+           <a href="Sivan Temple/5.jpeg"> <img src="Sivan Temple/5.jpeg" alt="Image 6"></a>
+            <div class="caption">Image 6</div>
+        </div>
+        <div class="gallery-item">
+            <a href="Sivan Temple/6.jpeg"><img src="Sivan Temple/6.jpeg" alt="Image 7"></a>
+            <div class="caption">Image 7</div>
+        </div>
+        <div class="gallery-item">
+            <a href="Sivan Temple/7.jpeg"><img src="Sivan Temple/7.jpeg" alt="Image 8"></a>
+            <div class="caption">Image 8</div>
+        </div>
+    
+    <div class="gallery-item">
+        <a href="Sivan Temple/9.jpeg"><img src="Sivan Temple/9.jpeg" alt="Image 9"></a>
+        <div class="caption">Image 9</div>
+    </div>
+
+    <div class="gallery-item">
+        <a href="Sivan Temple/10.1.jpeg"><img src="Sivan Temple/10.jpeg" alt="Image 10"></a>
+        <div class="caption">Image 10</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/11.jpeg"><img src="Sivan Temple/11.1.jpeg" alt="Image 11"></a>
+        <div class="caption">Image 11</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/12.jpg"><img src="Sivan Temple/12.jpg" alt="Image 12"></a>
+        <div class="caption">Image 12</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/15.jpg"><img src="Sivan Temple/15.jpg" alt="Image 13"></a>
+        <div class="caption">Image 13</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/16.JPG"><img src="Sivan Temple/16.JPG" alt="Image 15"></a>
+        <div class="caption">Image 14</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/17.jpg"><img src="Sivan Temple/17.1.jpg" alt="Image 16"></a>
+        <div class="caption">Image 16</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/18.jpg"><img src="Sivan Temple/18.1.jpg" alt="Image 17"></a>
+        <div class="caption">Image 17</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/19.jpg"><img src="Sivan Temple/19.1.jpg" alt="Image 18"></a>
+        <div class="caption">Image 18</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/20.JPG"><img src="Sivan Temple/20.1.JPG" alt="Image 19"></a>
+        <div class="caption">Image 19</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/21.jpg"><img src="Sivan Temple/21.1.jpg" alt="Image 20"></a>
+        <div class="caption">Image 20</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/22.jpg"><img src="Sivan Temple/22.1.jpg" alt="Image 21"></a>
+        <div class="caption">Image 21</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/23.JPG"><img src="Sivan Temple/23.1.JPG" alt="Image 22"></a>
+        <div class="caption">Image 22</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/24.jpg"><img src="Sivan Temple/24.1.jpg" alt="Image 23"></a>
+        <div class="caption">Image 23</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/25.JPG"><img src="Sivan Temple/25.1.JPG" alt="Image 24"></a>
+        <div class="caption">Image 24</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/26.jpg"><img src="Sivan Temple/26.1.jpg" alt="Image 25"></a>
+        <div class="caption">Image 25</div>
+    </div>
+    <div class="gallery-item">
+        <a href="Sivan Temple/27.jpg"><img src="Sivan Temple/27.1.jpg" alt="Image 26"></a>
+        <div class="caption">Image 26</div>
+    </div>
+    
+
+</body>
+</html>

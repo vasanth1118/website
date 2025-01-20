@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylejs" href="style.js">
+  <link rel="icon" href="Sivan Temple/25.1.JPG"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>வாழைப்பந்தல்</title>  
+  <link rel="stylesheet" href="styles.css">
+<style>
+#div1{
+  background-color: rgb(171, 222, 222);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; 
+    color: #333; 
+  }
+  
+  
+  header {
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    padding: 15px 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 25px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    color: orange; 
+  }
+  
+
+  .welcome {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: white;
+  }
+  
+  .welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .welcome p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .welcome button {
+    background-color: #FF7043;
+    color: rgb(249, 244, 244);
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s linear, transform 0.3s linear;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .welcome button:hover {
+    background-color: #FF5722; 
+    transform: scale(1.05);
+  }
+  
+  #message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #A5D6A7; 
+  }
+  
+
+  .gallery {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4FC3F7; 
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .contact {
+    background: linear-gradient(to right, #4CAF50, #2196F3); 
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    border-color: #FF7043; 
+  }
+  
+  .contact button {
+    background-color: #FF7043; 
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background-color: #FF5722; 
+    transform: scale(1.05);
+  }
+  
+  #formResponse {
+    font-size: 1.2rem;
+    color: #4FC3F7; 
+    margin-top: 20px;
+  }
+  
+  .vpl {
+    text-align: center;
+    padding: 60px 20px;
+    
+    color: white;
+  }
+  .vpl button {
+    background-color: #FF7043;
+    color: rgb(249, 244, 244);
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s linear, transform 0.3s linear;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .vpl button:hover {
+    background-color: #FF5722; 
+    transform: scale(1.05);
+  }
+  
+
+
+
+
+
+</style>
+</head>
+<body>
+ <vk id="div1"></vk> 
+  <header>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="Home.html">Gallery</a></li>
+        <li><a href="https://flic.kr/s/aHsmfkTEzn">About</a></li>
+        <li><a href="vasanth.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="welcome">
+    <h1>அருள்மிகு ஸ்ரீ தர்மசம்வர்த்தினி சமேத ஸ்ரீ பக்தவச்சலேஸ்வரர் ஸ்வாமி</h1>
+    <p>வாழைப்பந்தல் சிவ வாத்தியம்</p>
+    <a href="temple.html">
+      <button>Click here</button>
+    </a>
+  
+    
+    
+
+    <p id="message" style="display: none;">Thanks for visiting our site!</p>
+
+    
+  </section>
+
+  
+    
+
+    <section class="gallery"></section>
+    <hr>
+    <section class="vpl">
+      
+      <a href="Home.html"><button>Click our Gallery</button></a>
+    </section>
+    <div class="gallery-grid">
+      <a href="IMG_6849.JPG"><img src="IMG_6849.JPG" alt="Image 1"></a>
+      <a href="IMG_6842.JPG"><img src="IMG_6842.JPG" alt="Image 2"></a>
+      <a href="IMG_6844.JPG"><img src="IMG_6844.JPG" alt="Image 3"></a>
+      <a href="IMG_6847.JPG"><img src="IMG_6847.JPG" alt="Image 4"></a>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div>
+  <img src="Sivan Temple/15.jpg" width="68%" height="500px ">
+  </div>
+  <h1>ஸ்ரீ பக்தவத்சலேஸ்வரர் கோயில்</h1>
+  <br>
+  <br>
+  <pre><h4>
+  மூலவர்  : ஸ்ரீ பக்தவத்சலேஸ்வரர்
+  துணைவி : ஸ்ரீ தர்மசம்வர்த்தினி    
+    
+      இந்த கோவிலின் சில முக்கிய அம்சங்கள்....
+      மூன்று நிலை ராஜகோபுரத்துடன் கிழக்கு நோக்கிய ஆலயம். ராஜகோபுர நுழைவாயிலின் இருபுறமும்
+      விநாயகர் மற்றும் துர்க்கையின் அடிப்படை சிற்பங்கள். சமீபத்தில் கட்டப்பட்ட முக மண்டபத்தின் கீழ் ராஜகோபுரத்திற்குப் பிறகு பலிபீடம்,
+      த்வஜஸ்தம்பம் மற்றும் ரிஷபம் உள்ளன. மூலவர் ஒரு சுற்று ஆவுடையார் மீது சற்று பெரியவர். கோஷ்டத்தில் விநாயகர், தட்சிணாமூர்த்தி, 
+      மகா விஷ்ணு, பிரம்மா, துர்க்கை.
+    
+      பிரஹாரத்தில், துவாரபாலகி, நால்வர், 63 வார், விநாயகர், உண்ணாமூலை அம்மை சமேத ஸ்ரீ அண்ணாமலையார், ஸ்ரீ வள்ளி தேவசேனா 
+       சுப்பிரமணியர், நவவீரர், முனிவர், வள்ளலார், கிருபானந்த வாரியார், சண்டிகேஸ்வரர், சூரியன், சந்திரன், பைரவர், சனிஸ்வரன், 
+      நவக்கிரகேஸ்வரர் ஆகியோருடன் அம்பாள் சந்நிதி உள்ளது.</h4></pre>
+      <br>
+      
+      <img src="Sivan Temple/30.jpg" width="68%" height="500px">
+      <h2> கட்டிடக்கலை </h2>
+      <pre>
+        <h4>
+               இக்கோயில் கருவறை, அந்தரளம், அர்த்த மண்டபம் மற்றும் மகா மண்டபம் ஆகியவற்றைக் கொண்டுள்ளது.
+    கருவறை ஜகதி, மூன்று பட்ட குமுதம் மற்றும் பட்டிகையுடன் கூடிய பாத பந்த அதிஷ்டானத்தில் உள்ளது. 
+
+    பிட்டி வேதிகாவுடன் தொடங்குகிறது. கலசம், குடம், பலகை மற்றும் வெட்டுப் பொத்தியல் / பூமொட்டுப் பொத்தியல் ஆகியவற்றைக் 
+    கொண்ட பிரம்ம காண்ட பைலஸ்டர்கள். பிரஸ்தாரத்தில் வலபி, கபோதம் மற்றும் வியலா வரி.
+    
+    பூத கணங்கள் வலபியில் உள்ளன. கபோதம் நாசி குடுவில் தாமரை பதக்கங்கள் மற்றும் பூட் முகங்கள் உள்ளன. பூமிதேசத்தின் மீது 
+    ஏகதள வேசர விமானம் உள்ளது. ஆல்பா நாசிஸ் கொண்ட மகா நாசிகள் 4 கார்டினல் திசைகளில் உள்ளன. 
+    
+    கிரீவ கோஷ்டத்தில் சிவன், தட்சிணாமூர்த்தி, மகா விஷ்ணு, பிரம்மா ஆகியோர் உள்ளனர்.மகா மண்டபம் விஜயநகர காலத்தில் கட்டப்பட்டது.
+        </h4>
+      </pre>
+  
+
+  <footer>
+    <div id="div1">
+
+    <p>Author: Vasanth</p>
+    <p>&copy; 2024 வாழைப்பந்தல் </p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
